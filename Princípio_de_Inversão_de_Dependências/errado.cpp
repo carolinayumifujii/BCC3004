@@ -15,6 +15,8 @@ public:
     }
 };
 
+
+//Errado
 /*Este exemplo viola o principio porque a classe NotificationService
  está diretamente ligada às implementações concretas EmailService e SMSService. */
 class NotificationService {

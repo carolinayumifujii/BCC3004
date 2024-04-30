@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+
+//Correto
 /*Define um contrato comum para todos os serviços de mensagem: */
 class MessageService {
 public:
