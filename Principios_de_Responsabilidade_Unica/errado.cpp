@@ -11,6 +11,8 @@ public:
     void CadastrarDisciplina(const std::string& disciplina) {
         disciplinas.push_back(disciplina);
 
+
+        //Errado 
         // Mostrar as disciplinas cadastradas imprimindo no console do sistema
         std::cout << "Disciplinas cadastradas:" << std::endl;
         for (const auto& disciplina : disciplinas) {

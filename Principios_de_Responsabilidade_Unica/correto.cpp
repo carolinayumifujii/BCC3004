@@ -31,7 +31,7 @@ public:
         disciplina.CadastrarDisciplina(nomeDisciplina);
         std::cout << "Disciplina cadastrada com sucesso!" << std::endl;
     }
-
+//Correto
     // Método para interagir com o usuário e mostrar as disciplinas cadastradas
     void InteragirMostrarDisciplinas() {
         std::vector<std::string> disciplinas = disciplina.ObterDisciplinas();
