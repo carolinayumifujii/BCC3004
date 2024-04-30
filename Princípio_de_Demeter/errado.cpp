@@ -23,6 +23,7 @@ public:
         return produtos;
     }
 };
+//Errado
 /*classe Cliente está interagindo com objetos indiretos 
  em vez de interagir apenas com seus objetos diretos */
 class Cliente {
