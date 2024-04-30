@@ -47,6 +47,15 @@ Não há um exemplo direto desse caso no código fornecido.
 Exemplo: No método getProdutos da classe Pedido, que retorna a lista de produtos, ele invoca o método push_back do atributo produtos, que é um objeto da própria classe Pedido.
 Portanto, o código fornecido observa principalmente os casos 1 e 2 do Princípio de Demeter, garantindo que os métodos invocados estejam dentro dos limites aceitáveis de dependências, promovendo assim um baixo acoplamento entre as classes.
 
+## Princípio Aberto/Fechado
+"Em resumo, o Princípio Aberto/Fechado tem como objetivo a construção de classes flexíveis e extensíveis, capazes de se adaptarem a diversos cenários de uso, sem modificações no seu código fonte."
 
+No exemplo feito em BCC3004/Prinicipio_Aberto_Fechado/correto.cpp podemos analisar como as classes CalculadoraDeAreaEmMetrosQuadrados e CalculadoraDeAreaEmHectares foram projetadas:
 
+- Princípio Aberto: As classes estão abertas para extensão. Isso significa que novos tipos de calculadoras de área podem ser facilmente adicionados sem modificar o código existente. Se quisermos adicionar uma nova implementação para calcular a área em uma unidade diferente, podemos criar uma nova classe que herda de CalculadoraDeArea e implementar o método calcularAreaTotal.
+- Princípio Fechado: As classes estão fechadas para modificação. Isso significa que o comportamento das classes existentes não precisa ser alterado para adicionar novas funcionalidades. Neste caso, as classes CalculadoraDeAreaEmMetrosQuadrados e CalculadoraDeAreaEmHectares estão fechadas para modificação. Se quisermos adicionar uma nova forma de calcular a área, não precisamos modificar essas classes; em vez disso, criamos uma nova classe que segue a mesma interface e implementa a nova funcionalidade.
 
+Portanto, o Princípio Aberto/Fechado está sendo observado neste código, garantindo que as classes sejam abertas para extensão e fechadas para modificação.
+
+## Referências 
+Marco Tulio Valente. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade, Editora: Independente, 2020. 
