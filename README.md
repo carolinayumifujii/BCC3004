@@ -3,7 +3,7 @@
 ## Princípio da Responsabilidade Única
 É o princípio que faz a aplicação direta da ideia de coesão. Propõe que toda classe deve ter uma única responsabilidade. Mais ainda, responsabilidade, no contexto do princípio, significa motivo para modificar uma classe. Ou seja, deve existir 1 único motivo para modificar qualquer classe em um sistema.
 
-No exemplo feito em BCC3004/Principios_de_Responsabilidade_Unica/correto.cpp [Código Fonte](Principios_de_Responsabilidade_Unica/correto.cpp) podemos observar na classe Disciplina e na classe Console:
+No exemplo feito em BCC3004/Principios_de_Responsabilidade_Unica/correto.cpp [Código](Principios_de_Responsabilidade_Unica/correto.cpp) podemos observar na classe Disciplina e na classe Console:
 
 - Classe Disciplina:
 Responsabilidade: A classe Disciplina é responsável por gerenciar a lista de disciplinas cadastradas.
@@ -16,7 +16,7 @@ Justificativa: A classe Console tem uma única responsabilidade: interagir com o
 ## Princípio de Inversão de Dependências
 "Esse princípio recomenda que uma classe cliente deve estabelecer dependências prioritariamente com abstrações e não com implementações concretas, pois abstrações (isto é, interfaces) são mais estáveis do que implementações concretas (isto é, classes). A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes."
 
-No exemplo feito em BCC3004/Princípio_de_Inversão_de_Dependências/correto.cpp vemos:
+No exemplo feito em BCC3004/Princípio_de_Inversão_de_Dependências/correto.cpp [Código](Princípio_de_Inversão_de_Dependências/correto.cpp) vemos:
 
 - A classe NotificationService depende de uma abstração, não de implementações concretas. Ela recebe uma referência a um objeto do tipo MessageService no construtor.
 - A classe NotificationService não está diretamente ligada às classes EmailService ou SMSService. Em vez disso, ela depende de uma interface comum (MessageService) que define um contrato para todos os serviços de mensagem.
@@ -35,7 +35,7 @@ Portanto, a classe NotificationService segue o Princípio de Inversão de Depend
 
 - de atributos da classe do método (caso 4)"
 
-No exemplo feito em BCC3004/Princípio_de_Demeter/correto.cpp podemos observar que:
+No exemplo feito em BCC3004/Princípio_de_Demeter/correto.cpp [Código](Princípio_de_Demeter/correto.cpp) podemos observar que:
 
 - Caso 1: Métodos de sua própria classe:
 Exemplo: Na classe Pedido, o método adicionarProduto adiciona um produto à lista de produtos. Ele invoca diretamente o método push_back da classe std::vector, que é um método da própria classe std::vector.
@@ -50,7 +50,7 @@ Portanto, o código fornecido observa principalmente os casos 1 e 2 do Princípi
 ## Princípio Aberto/Fechado
 "Em resumo, o Princípio Aberto/Fechado tem como objetivo a construção de classes flexíveis e extensíveis, capazes de se adaptarem a diversos cenários de uso, sem modificações no seu código fonte."
 
-No exemplo feito em BCC3004/Prinicipio_Aberto_Fechado/correto.cpp podemos analisar como as classes CalculadoraDeAreaEmMetrosQuadrados e CalculadoraDeAreaEmHectares foram projetadas:
+No exemplo feito em BCC3004/Prinicipio_Aberto_Fechado/correto.cpp [Código](Prinicipio_Aberto_Fechado/correto.cpp) podemos analisar como as classes CalculadoraDeAreaEmMetrosQuadrados e CalculadoraDeAreaEmHectares foram projetadas:
 
 - Princípio Aberto: As classes estão abertas para extensão. Isso significa que novos tipos de calculadoras de área podem ser facilmente adicionados sem modificar o código existente. Se quisermos adicionar uma nova implementação para calcular a área em uma unidade diferente, podemos criar uma nova classe que herda de CalculadoraDeArea e implementar o método calcularAreaTotal.
 - Princípio Fechado: As classes estão fechadas para modificação. Isso significa que o comportamento das classes existentes não precisa ser alterado para adicionar novas funcionalidades. Neste caso, as classes CalculadoraDeAreaEmMetrosQuadrados e CalculadoraDeAreaEmHectares estão fechadas para modificação. Se quisermos adicionar uma nova forma de calcular a área, não precisamos modificar essas classes; em vez disso, criamos uma nova classe que segue a mesma interface e implementa a nova funcionalidade.
