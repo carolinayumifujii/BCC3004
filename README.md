@@ -3,7 +3,7 @@
 ## Princípio da Responsabilidade Única
 É o princípio que faz a aplicação direta da ideia de coesão. Propõe que toda classe deve ter uma única responsabilidade. Mais ainda, responsabilidade, no contexto do princípio, significa motivo para modificar uma classe. Ou seja, deve existir 1 único motivo para modificar qualquer classe em um sistema.
 
-No exemplo feito em BCC3004/Principios_de_Responsabilidade_Unica/correto.cpp podemos observar na classe Disciplina e na classe Console:
+No exemplo feito em BCC3004/Principios_de_Responsabilidade_Unica/correto.cpp [Código Fonte](Principios_de_Responsabilidade_Unica/correto.cpp) podemos observar na classe Disciplina e na classe Console:
 
 - Classe Disciplina:
 Responsabilidade: A classe Disciplina é responsável por gerenciar a lista de disciplinas cadastradas.
