@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+
+//Correto
 class CalculadoraDeArea {
 public:
     virtual double calcularAreaTotal(const std::vector<double>& areas) const = 0;

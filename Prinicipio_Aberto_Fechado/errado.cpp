@@ -12,6 +12,8 @@ public:
         return areaTotal;
     }
     
+
+    //Errado
     // Método modificado para calcular área em hectares (ha)
     double calcularAreaTotalEmHectares(const std::vector<double>& areas) const {
         double areaTotal = calcularAreaTotalEmMetrosQuadrados(areas);
